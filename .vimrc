@@ -9,6 +9,9 @@ filetype indent on
 set autoread
 au FocusGained,BufEnter * checktime
 
+" Make arrow keys not insert A, B, C, D
+set nocompatible
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -123,4 +126,3 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " ctags stuff
 set tags=./tags;/
-nnoremap <C-[> <C-t>
